@@ -10,9 +10,21 @@ import java.time.Duration;
 import java.util.List;
 
 public class MethodsForTests  implements Common {
-    public static String getProductName ( String xpath, WebDriver driver ){
-        WebElement productNameElement = (new WebDriverWait(driver, Duration.ofSeconds(3)).
-            until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath))));
+    public static String getProductName ( WebDriver driver ){
+        WebElement productNameElement = (new WebDriverWait(driver, Duration.ofSeconds(5)).
+            until(ExpectedConditions.presenceOfElementLocated(By.xpath(PRODUCT_NAME_XPATH))));
+        return productNameElement.getText();
+    }
+
+    public static String getProductList ( WebDriver driver, Integer index ) throws InterruptedException {
+        Thread.sleep(TIMING_FOR_THREAD_SLEEP/5);
+        List<WebElement> productList = driver.findElements(By.xpath(PRODUCTS_IN_CART_XPATH));
+        return productList.get(index).getText();
+    }
+
+    public static String getElementText ( String xpath,  WebDriver driver ){
+        WebElement productNameElement = (new WebDriverWait(driver, Duration.ofSeconds(5)).
+                until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath))));
         return productNameElement.getText();
     }
 
