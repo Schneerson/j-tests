@@ -5,15 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03b5ae9f-25d4-4741-acab-307dd279a338" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Constats/Common.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Methods/MethodsForTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProductSelectionChromeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductSelectionChromeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/IBaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductSelectionChromeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ProductSelectionChromeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -35,6 +43,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean test" />
+    </option>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
