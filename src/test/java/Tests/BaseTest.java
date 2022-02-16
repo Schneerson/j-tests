@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import static Constats.Common.CHROME_ARGUMENTS;
 
 public class BaseTest implements IBaseTest {
-    WebDriver driver;
+    public static WebDriver driver;
 
     @BeforeAll
     static void setupClass() {
