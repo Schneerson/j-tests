@@ -7,7 +7,7 @@ public interface Common {
     String PRODUCT_WITHOUT_SELECTABLE_OPTIONS_PAGE_URL = "https://www.joom.com/ru/products/604f1de51436ae0106cbb7f2";
     String PRODUCT_NAME_XPATH = "//h1[@class = 'name___3sZiF']";
     String PRODUCT_WITH_SELECTABLE_OPTIONS_PAGE_URL = "https://www.joom.com/ru/products/619752c9785b80012dd73ddd";
-    String PRODUCT_PAGE_URL = "https://www.joom.com/ru/products/619f50f54e5e04014a7082fe";
+    String PRODUCT_PAGE_URL = "https://www.joom.com/ru/products/60bf2442f15fc301a69d8859";
     String AUTHORIZATION_WITH_EMAIL_BUTTON_PATH =  "//*[@class='button___1YtF2 email___3-nIG size-normal']";
     String OPTION_COLOUR_BUTTON_XPATH = "//*[@class='border___11f1x']";
     String OPTION_SIZE_BUTTON_XPATH = "//*[@class='border___2Hn4H']";

@@ -194,8 +194,6 @@ class ProductSelectionChromeTest implements Common {
         String productNameAfterAdding = MethodsForTests.getProductName( driver );
 
         Assert.assertEquals( productNameBeforeAdding, productNameAfterAdding );
-
-        // MethodsForTests.clickOnButton( FAVORITE_BUTTON_PATH, WAIT_MODE, driver );
     }
 
     @Test
@@ -206,7 +204,7 @@ class ProductSelectionChromeTest implements Common {
 
         MethodsForTests.clickOnButton( CART_BUTTON_XPATH, WITHOUT_WAIT_MODE, driver );
 
-        MethodsForTests.clickOnButton( CLOSE_ALERT_PATH, WAIT_MODE, driver );
+        //MethodsForTests.clickOnButton( CLOSE_ALERT_PATH, WAIT_MODE, driver ); Popup warning no longer pops up
 
         MethodsForTests.clickOnButton( CART_BUTTON_XPATH, WAIT_MODE, driver);
 
@@ -229,9 +227,10 @@ class ProductSelectionChromeTest implements Common {
 
         MethodsForTests.clickOnButton( CART_BUTTON_XPATH,WITHOUT_WAIT_MODE, driver );
 
-        MethodsForTests.clickOnButton( CLOSE_ALERT_PATH, WAIT_MODE, driver );
+        Thread.sleep(1000);
+        //MethodsForTests.clickOnButton( CLOSE_ALERT_PATH, WAIT_MODE, driver );  Popup warning no longer pops up
 
-        MethodsForTests.clickOnButton( BUY_NOW_BUTTON_PATH, WAIT_MODE, driver );
+        MethodsForTests.clickOnButton( BUY_NOW_BUTTON_PATH, WITHOUT_WAIT_MODE, driver );
 
         String productNameInCart = MethodsForTests.getProductName( driver );
 
