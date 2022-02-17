@@ -1,8 +1,6 @@
 package Application;
 
-import Pages.CartPage;
-import Pages.FavoritePage;
-import Pages.ProductPage;
+import Pages.*;
 import Tests.BaseTest;
 import org.openqa.selenium.WebElement;
 
@@ -116,4 +114,30 @@ public class app extends BaseTest {
         ProductPage.alert().click();
         Thread.sleep(2000);
     }
+
+    public static void openMainPage () throws InterruptedException {
+        driver.get(MAIN_PAGE_URL);
+        Thread.sleep(3000);
+    }
+
+    public static void closeMainPageAlert () throws InterruptedException {
+        MainPage.alert().click();
+        Thread.sleep(2000);
+    }
+
+    public static void makeSearchRequest (String input) throws InterruptedException {
+        MainPage.searchInput().sendKeys(input);
+        MainPage.submitButton().click();
+        Thread.sleep(3000);
+    }
+
+    public static String[] getProductNamesFromSearchResult () {
+        List<WebElement> elementsNames = SearchResultPage.productNamesInSearchResult();
+        String[] productNames = new String[PRODUCTS_IN_SEARCH_RESULT];
+        for (int i = 0; i < PRODUCTS_IN_SEARCH_RESULT; i++) {
+            productNames[i] = elementsNames.get(i).getText();
+        }
+        return productNames;
+    }
+
 }
