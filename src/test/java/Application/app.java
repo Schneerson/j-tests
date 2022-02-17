@@ -39,7 +39,7 @@ public class app extends BaseTest {
 
     public static void addProductInCart () throws InterruptedException {
         ProductPage.addToCartButton().click();
-        Thread.sleep(7000);
+        Thread.sleep(3000);
     }
 
     public static void moveToCart () throws InterruptedException {
