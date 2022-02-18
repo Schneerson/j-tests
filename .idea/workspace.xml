@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="316f3d10-df23-4141-a3e6-5fffbf77ae28" name="Changes" comment="init commit">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/MainPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/SearchResultPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/ParameterizedChromeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/helper/searchResultAnalysisHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/data.csv" afterDir="false" />
+    <list default="true" id="316f3d10-df23-4141-a3e6-5fffbf77ae28" name="Changes" comment="added positive search test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Application/app.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Application/app.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Constats/Common.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Constats/Common.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/SearchResultPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/SearchResultPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ParameterizedChromeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/SearchModuleChromeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ProductSelectionChromeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ProductSelectionChromeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/helper/AuthHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Helper/AuthHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/helper/searchResultAnalysisHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Helper/SearchResultAnalysisHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/data.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,54 +59,7 @@
       <command value="mvn clean test" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ParameterizedChromeTest.enterValidValueInSearchBar">
-    <configuration name="ParameterizedChromeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="joom-tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.ParameterizedChromeTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ParameterizedChromeTest.enterValidValueInSearchBar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="joom-tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.ParameterizedChromeTest" />
-      <option name="METHOD_NAME" value="enterValidValueInSearchBar(java.lang.String,java.lang.String,java.lang.String)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductSelectionChromeTest.addToFavorite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="joom-tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.ProductSelectionChromeTest" />
-      <option name="METHOD_NAME" value="addToFavorite" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.SearchModuleChromeTest.enterValidValueInSearchBar">
     <configuration name="ProductSelectionChromeTest.addingThreeProductInCart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="joom-tests" />
       <extension name="coverage">
@@ -139,20 +92,67 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SearchModuleChromeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="joom-tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.SearchModuleChromeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchModuleChromeTest.enterInvalidValueInSearchBar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="joom-tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.SearchModuleChromeTest" />
+      <option name="METHOD_NAME" value="enterInvalidValueInSearchBar(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchModuleChromeTest.enterValidValueInSearchBar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="joom-tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.SearchModuleChromeTest" />
+      <option name="METHOD_NAME" value="enterValidValueInSearchBar(java.lang.String,java.lang.String,java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ParameterizedChromeTest.enterValidValueInSearchBar" />
-        <item itemvalue="JUnit.ParameterizedChromeTest" />
+        <item itemvalue="JUnit.SearchModuleChromeTest.enterValidValueInSearchBar" />
+        <item itemvalue="JUnit.SearchModuleChromeTest.enterInvalidValueInSearchBar" />
+        <item itemvalue="JUnit.SearchModuleChromeTest" />
         <item itemvalue="JUnit.ProductSelectionChromeTest.addingTwoProductInCartWithBuyNowButton" />
         <item itemvalue="JUnit.ProductSelectionChromeTest.addingThreeProductInCart" />
-        <item itemvalue="JUnit.ProductSelectionChromeTest.addToFavorite" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="03b5ae9f-25d4-4741-acab-307dd279a338" name="Changes" comment="" />
+      <changelist id="316f3d10-df23-4141-a3e6-5fffbf77ae28" name="Changes" comment="init commit" />
       <created>1645007774615</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -172,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645100818475</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added positive search test">
+      <created>1645105094204</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1645105094204</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,6 +196,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="project structure changed" />
     <MESSAGE value="init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
+    <MESSAGE value="added positive search test" />
+    <option name="LAST_COMMIT_MESSAGE" value="added positive search test" />
   </component>
 </project>

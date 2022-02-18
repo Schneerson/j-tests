@@ -42,7 +42,7 @@ public class app extends BaseTest {
 
     public static void moveToCart () throws InterruptedException {
         ProductPage.moveToCartButton().click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
     }
 
     public static String getProductNameFromCart (Integer index) {
@@ -96,7 +96,7 @@ public class app extends BaseTest {
 
     public static void moveToFavorite () throws InterruptedException {
         ProductPage.profile().click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         ProductPage.favoriteList().click();
         Thread.sleep(3000);
     }
@@ -107,7 +107,7 @@ public class app extends BaseTest {
 
     public static void removeFromFavorite () throws InterruptedException {
         FavoritePage.removeFromFavoriteButton().click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
     }
 
     public static void closeAlert () throws InterruptedException {
@@ -138,6 +138,10 @@ public class app extends BaseTest {
             productNames[i] = elementsNames.get(i).getText();
         }
         return productNames;
+    }
+
+    public static String nothingIsFoundedAlertText () {
+        return SearchResultPage.nothingIsFoundedAlert().getText();
     }
 
 }

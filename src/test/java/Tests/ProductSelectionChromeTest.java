@@ -1,7 +1,7 @@
 package Tests;
 
 import Application.app;
-import helper.AuthHelper;
+import Helper.AuthHelper;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -17,6 +17,7 @@ class ProductSelectionChromeTest extends BaseTest  {
 
         Assertions.assertEquals(productNameInPage, app.getProductNameFromCart(0));
     }
+
 
     @Test
     void addingProductWithOptionsToCart() throws InterruptedException {
@@ -186,4 +187,5 @@ class ProductSelectionChromeTest extends BaseTest  {
         Assertions.assertEquals(firstProductNameInPage, app.getProductNameFromCart(1));
         Assertions.assertEquals(secondProductNameInPage, app.getProductNameFromCart(0));
     }
+
 }

@@ -24,6 +24,8 @@ public interface Common {
     String NAME_IN_FAVORITE = "//*[@class='name___1aqk8']";
     String MAIN_PAGE_ALERT_XPATH = "//*[@class='close___2FkH1']";
     String SUBMIT_SEARCH_BUTTON = "//*[@class='submit___3XMCO']";
+    String NOTHING_IS_FOUNDED_ALERT_XPATH = "//*[@class='title___3fkab']";
+    String NOTHING_IS_FOUNDED_ALERT_TEXT = "К сожалению, мы ничего не нашли :(";
     String SEARCH_INPUT_XPATH = "//*[@class='input___3wRUz']";
     String DELETE_FROM_FAVORITE_BUTTON_XPATH = "//*[@class='favoriteButton___2Yxao favorite']";
     String FAVORITE_BUTTON_XPATH = "//*[@href='/ru/favorites']";
