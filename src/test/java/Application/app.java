@@ -1,8 +1,6 @@
 package Application;
 
-import Pages.CartPage;
-import Pages.FavoritePage;
-import Pages.ProductPage;
+import Pages.*;
 import Tests.BaseTest;
 import org.openqa.selenium.WebElement;
 
@@ -39,12 +37,12 @@ public class app extends BaseTest {
 
     public static void addProductInCart () throws InterruptedException {
         ProductPage.addToCartButton().click();
-        Thread.sleep(7000);
+        Thread.sleep(3000);
     }
 
     public static void moveToCart () throws InterruptedException {
         ProductPage.moveToCartButton().click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
     }
 
     public static String getProductNameFromCart (Integer index) {
@@ -98,7 +96,7 @@ public class app extends BaseTest {
 
     public static void moveToFavorite () throws InterruptedException {
         ProductPage.profile().click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         ProductPage.favoriteList().click();
         Thread.sleep(3000);
     }
@@ -109,11 +107,41 @@ public class app extends BaseTest {
 
     public static void removeFromFavorite () throws InterruptedException {
         FavoritePage.removeFromFavoriteButton().click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
     }
 
     public static void closeAlert () throws InterruptedException {
         ProductPage.alert().click();
         Thread.sleep(2000);
     }
+
+    public static void openMainPage () throws InterruptedException {
+        driver.get(MAIN_PAGE_URL);
+        Thread.sleep(3000);
+    }
+
+    public static void closeMainPageAlert () throws InterruptedException {
+        MainPage.alert().click();
+        Thread.sleep(2000);
+    }
+
+    public static void makeSearchRequest (String input) throws InterruptedException {
+        MainPage.searchInput().sendKeys(input);
+        MainPage.submitButton().click();
+        Thread.sleep(3000);
+    }
+
+    public static String[] getProductNamesFromSearchResult () {
+        List<WebElement> elementsNames = SearchResultPage.productNamesInSearchResult();
+        String[] productNames = new String[PRODUCTS_IN_SEARCH_RESULT];
+        for (int i = 0; i < PRODUCTS_IN_SEARCH_RESULT; i++) {
+            productNames[i] = elementsNames.get(i).getText();
+        }
+        return productNames;
+    }
+
+    public static String nothingIsFoundedAlertText () {
+        return SearchResultPage.nothingIsFoundedAlert().getText();
+    }
+
 }
